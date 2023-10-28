@@ -7,6 +7,6 @@ import Renderer from "./three/Renderer.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-    <Renderer />
+    {/* <Renderer /> */}
   </React.StrictMode>
 );

@@ -10,6 +10,7 @@ const LandingPage = () => {
 
   return (
     <>
+    {/* <div className="">rgehbdh</div> */}
       {/* <h1>Hello</h1>
 
       <div className="h-[90.6vh] w-[100%]  bg-no-repeat">
