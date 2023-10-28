@@ -3,5 +3,16 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  publicDir: "../static/",
+  server: {
+    proxy: {
+      '/register': {
+        target: 'http://localhost:5000',
+        changeOrigin: true
+      },
+      '/login': {
+        target: 'http://localhost:5000',
+        changeOrigin: true
+      }
+    }
+  }
 });
