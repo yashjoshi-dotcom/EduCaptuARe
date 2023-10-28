@@ -4,12 +4,14 @@ import image1 from "../Images/ld.png";
 import image2 from "../Images/ss2.jpg";
 import image3 from "../Images/ss3.jpg";
 import image4 from "../Images/ss.jpg";
+import FrameAnimation from "./Frameanimation";
 
 const LandingPage = () => {
   const navigate= useNavigate();
 
   return (
     <>
+    {/* <FrameAnimation/> */}
     {/* <div className="">rgehbdh</div> */}
       {/* <h1>Hello</h1>
 
