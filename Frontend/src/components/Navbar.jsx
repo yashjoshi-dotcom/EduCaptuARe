@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, BrowserRouter } from "react-router-dom";
 
 
 import { useState, useEffect } from "react";
@@ -47,9 +47,11 @@ const Navabr = () => {
   //   },[])
 
   // const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
-  const isAuthenticated=0;
+  const isAuthenticated=false;
 
   return (
+    <>
+    <BrowserRouter>
     <div className="dark ">
       <Navbar fluid={true} rounded={false}>
         <div className=" sm:absolute">
@@ -59,10 +61,10 @@ const Navabr = () => {
             </span>
           </Navbar.Brand>
         </div>
-        {/* <div className="flex  md:order-2 ">
+        <div className="flex  md:order-2 ">
         {isAuthenticated ? (
             <>
-              <div className=" text-slate-300 mt-2 mr-3 font-bold"> {user.name} </div>
+              <div className=" text-slate-300 mt-2 mr-3 font-bold"> </div>
             
         
             <NavLink
@@ -70,7 +72,8 @@ const Navabr = () => {
             active={true}
             className=" text-lg text-neutral-400 hover:text-neutral-200"
           >
-            <img className=" rounded-full w-10" src= {user.picture} alt="" />
+            <div className="">vhvh</div>
+            {/* <img className=" rounded-full w-10"  alt="" /> */}
           </NavLink>
           </>
           
@@ -87,9 +90,9 @@ const Navabr = () => {
 
           )}
           <Navbar.Toggle />
-        </div> */}
+        </div>
         {/* <div className="lg:m-auto"> */}
-        {/* <Navbar.Collapse
+        <Navbar.Collapse
         className="pl-[20vw]">
           <NavLink
             to="/listing"
@@ -133,12 +136,14 @@ const Navabr = () => {
               <button onClick={() => loginWithRedirect()}>Log In</button>
             </li>
           )}</div>
-        </Navbar.Collapse> */}
+        </Navbar.Collapse>
         {/* </div> */}
       </Navbar>
           
 
     </div>
+    </BrowserRouter>
+    </>
   );
 };
 

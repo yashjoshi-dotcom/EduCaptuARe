@@ -13,11 +13,10 @@ export default function Experience() {
   return (
     <>
       <orbitControls args={[camera, gl.domElement]} />
-      <GLTFLoaderComponent
-        url="../../static/models/Phone/phone.gltf"
-        position={[0, 0, 0]}
-        scale={[1, 1, 1]}
-      />
+      <mesh position={[0, 1, -1]}>
+        <boxGeometry/>
+        <meshBasicMaterial color={"red"}/>
+      </mesh>
     </>
   );
 }
