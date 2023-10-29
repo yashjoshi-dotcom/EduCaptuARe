@@ -8,12 +8,12 @@ import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-// import { useAuth0 } from "@auth0/auth0-react";
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 const Form = () => {
 
-    // const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
+    const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
     const navigate = useNavigate();
 
 

@@ -4,8 +4,8 @@ import { Flowbite } from "flowbite-react";
 import { Card } from "flowbite-react";
 import { Carousel } from "flowbite-react";
 
-import image1 from "../Images/laptop.jpg";
-import image2 from "../Images/lap.jpg";
+const image1 = require("../Images/laptop.jpg");
+const image2 = require("../Images/lap.jpg");
 const Reward = () => {
     return (
         <>
