@@ -9,6 +9,9 @@ import "flowbite";
 import { Navbar } from "flowbite-react/lib/esm/components/Navbar";
 import { Dropdown } from "flowbite-react/lib/esm/components/Dropdown";
 import { Avatar } from "flowbite-react/lib/esm/components/Avatar";
+const handleClick = () => {
+  window.location.replace('https://learning-space.netlify.app/');
+};
 
 const Navabr = () => {
   //   // const [isMenuOpen, SetMenu] = useState(false);
@@ -99,6 +102,13 @@ const Navabr = () => {
           >
             Home
             </NavLink>
+            {/* <NavLink
+            to={{pathname: "https://learning-space.netlify.app/"}}
+            className="text-lg text-neutral-400 hover:text-neutral-200"
+          >
+            Indepth-Viewer
+          </NavLink> */}
+          <button onClick={handleClick} className="text-lg text-neutral-400 hover:text-neutral-200">Indepth-Viewer</button>
           <NavLink
             to="/Reward"
             className="text-lg text-neutral-400 hover:text-neutral-200"
