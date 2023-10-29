@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3a54ca9e.css",
+    "main.js": "/static/js/main.bf31faa3.js",
+    "static/media/bgg1.png": "/static/media/bgg1.7d2031493e7a4183d461.png",
+    "static/media/arch.jpg": "/static/media/arch.48ded9a1429efb48d399.jpg",
+    "static/media/ld.png": "/static/media/ld.d58cd7c9611f2dff681e.png",
+    "static/media/electronics.webp": "/static/media/electronics.817ecdd340d4512852a7.webp",
+    "static/media/arrow1.png": "/static/media/arrow1.0b0862ecf5d02b139ac7.png",
+    "static/media/bio.jpg": "/static/media/bio.1d3af867456d905b04bb.jpg",
+    "static/media/ss.jpg": "/static/media/ss.9e57dffff179a38e4067.jpg",
+    "static/media/ss2.jpg": "/static/media/ss2.0a4b236fe99e9098a5e3.jpg",
+    "static/media/human.jpg": "/static/media/human.44de819a3612c3efa704.jpg",
+    "static/media/ss3.jpg": "/static/media/ss3.40af314ac40df9caa48c.jpg",
+    "static/media/lap.jpg": "/static/media/lap.1731c561af5e070bdcf4.jpg",
+    "static/media/music.jpg": "/static/media/music.9516920b7d68f556b5d0.jpg",
+    "static/media/robot.avif": "/static/media/robot.65d0cdb3884d8f9ccd07.avif",
+    "static/media/laptop.jpg": "/static/media/laptop.316508d7528aec3837ce.jpg",
+    "static/media/bg.webp": "/static/media/bg.5f21b809530d1ce3dcab.webp",
+    "static/media/weapon.jpg": "/static/media/weapon.a4ce06d4fd932edc75f0.jpg",
+    "static/media/car.jpg": "/static/media/car.ae143130e11f1b3640fc.jpg",
+    "index.html": "/index.html",
+    "main.3a54ca9e.css.map": "/static/css/main.3a54ca9e.css.map",
+    "main.bf31faa3.js.map": "/static/js/main.bf31faa3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a54ca9e.css",
+    "static/js/main.bf31faa3.js"
+  ]
+}
