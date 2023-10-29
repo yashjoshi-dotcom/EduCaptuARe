@@ -1,6 +1,7 @@
 import React from "react";
-import { NavLink, BrowserRouter } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
+import { useAuth0 } from "@auth0/auth0-react";
 
 import { useState, useEffect } from "react";
 // import Menu from "./Menu";
@@ -46,12 +47,10 @@ const Navabr = () => {
   //       CallAboutPage();
   //   },[])
 
-  // const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
-  const isAuthenticated=false;
+  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
+
 
   return (
-    <>
-    <BrowserRouter>
     <div className="dark ">
       <Navbar fluid={true} rounded={false}>
         <div className=" sm:absolute">
@@ -64,7 +63,7 @@ const Navabr = () => {
         <div className="flex  md:order-2 ">
         {isAuthenticated ? (
             <>
-              <div className=" text-slate-300 mt-2 mr-3 font-bold"> </div>
+              <div className=" text-slate-300 mt-2 mr-3 font-bold"> {user.name} </div>
             
         
             <NavLink
@@ -72,8 +71,7 @@ const Navabr = () => {
             active={true}
             className=" text-lg text-neutral-400 hover:text-neutral-200"
           >
-            <div className="">vhvh</div>
-            {/* <img className=" rounded-full w-10"  alt="" /> */}
+            <img className=" rounded-full w-10" src= {user.picture} alt="" />
           </NavLink>
           </>
           
@@ -142,8 +140,6 @@ const Navabr = () => {
           
 
     </div>
-    </BrowserRouter>
-    </>
   );
 };
 

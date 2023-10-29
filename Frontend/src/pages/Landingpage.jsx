@@ -1,18 +1,15 @@
 import React from "react";
 import { Navigate, useNavigate } from "react-router-dom";
-import image1 from "../Images/ld.png";
-import image2 from "../Images/ss2.jpg";
-import image3 from "../Images/ss3.jpg";
-import image4 from "../Images/ss.jpg";
-import FrameAnimation from "./Frameanimation";
+const image1=require("../Images/ld.png");
+const image2=require("../Images/ss2.jpg");
+const image3=require("../Images/ss3.jpg");
+const image4=require("../Images/ss.jpg");
 
 const LandingPage = () => {
   const navigate= useNavigate();
 
   return (
     <>
-    {/* <FrameAnimation/> */}
-    {/* <div className="">rgehbdh</div> */}
       {/* <h1>Hello</h1>
 
       <div className="h-[90.6vh] w-[100%]  bg-no-repeat">
