@@ -1,26 +1,27 @@
-// Importing required libraries
-const express = require('express');
-const cors = require('cors');
-const cookieParser = require('cookie-parser');
-
-
-// Initiating Connection to the MongoDB
-require('./conn');
-
-// Importing all routes
-// const all_listings = require('./src/routes/all_listings');
-const register = require('./register');
-const base = require('./base');
-const login = require('./login');
-
-
+const express = require("express");
+require("dotenv").config();
 const app = express();
-app.use(express.json());
+const http = require("http");
+const port = process.env.PORT || 5000;
+const cors = require("cors");
+const server = require("http").createServer(app);
+
+//Using Cores
 app.use(cors());
-app.use(cookieParser());
+
+const fileUpload = require("express-fileupload");
+app.use(
+  fileUpload({
+    useTempFiles: true,
+  })
+);
+require("./src/db/conn");
+
+const ranks = require("./src/models/userSchema");
+app.use(express.json());
+app.use(require("./src/router/auth"));
 
 
-app.use('/', base);
-app.use('/register',register);
-app.use('/login',login);
-module.exports = app;
+server.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
