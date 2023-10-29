@@ -114,6 +114,19 @@ router.patch('/add_data/:id',async (req,res)=>{
     }
  });
 
+ router.get('/',async (req,res)=>
+ {
+    try
+    {
+        res.status(200).json({message :"Hitting the Base Endpoint Successfully"});
+    }
+    catch(err){
+        //Consoling error for proper debugging.
+        console.log(err);
+        res.status(500).json({error:"We are experiencing some server problems!!"})
+    }
+ });
+
  module.exports=router;
 
 
