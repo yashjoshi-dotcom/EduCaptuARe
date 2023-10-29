@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "homepage": "https://github.com/yashjoshi-dotcom/EduCaptuARe",
   "private": true,
   "proxy": "https://edu-captu-a-re.vercel.app/",
   "dependencies": {
