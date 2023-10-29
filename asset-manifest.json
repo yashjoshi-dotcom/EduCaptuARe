@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EduCaptuARe/static/css/main.ff15acfd.css",
-    "main.js": "/EduCaptuARe/static/js/main.95942a14.js",
+    "main.js": "/EduCaptuARe/static/js/main.3c776645.js",
     "static/media/bgg1.png": "/EduCaptuARe/static/media/bgg1.7d2031493e7a4183d461.png",
     "static/media/arch.jpg": "/EduCaptuARe/static/media/arch.48ded9a1429efb48d399.jpg",
     "static/media/ld.png": "/EduCaptuARe/static/media/ld.d58cd7c9611f2dff681e.png",
@@ -21,10 +21,10 @@
     "static/media/car.jpg": "/EduCaptuARe/static/media/car.ae143130e11f1b3640fc.jpg",
     "index.html": "/EduCaptuARe/index.html",
     "main.ff15acfd.css.map": "/EduCaptuARe/static/css/main.ff15acfd.css.map",
-    "main.95942a14.js.map": "/EduCaptuARe/static/js/main.95942a14.js.map"
+    "main.3c776645.js.map": "/EduCaptuARe/static/js/main.3c776645.js.map"
   },
   "entrypoints": [
     "static/css/main.ff15acfd.css",
-    "static/js/main.95942a14.js"
+    "static/js/main.3c776645.js"
   ]
 }
