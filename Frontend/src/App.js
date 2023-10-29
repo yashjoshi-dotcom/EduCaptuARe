@@ -19,7 +19,7 @@ function App() {
     <>
     <Navbar/> 
     <Routes>
-    <Route path="/" element={<LandingPage />} />      
+    <Route path="/EduCaptuARe" element={<LandingPage />} />      
     <Route path="/listing" element={<Listing/>} />        
     <Route path="/profile" element={<Profile/> } />        
     <Route path="/singin" element={<Signin/> } />  
