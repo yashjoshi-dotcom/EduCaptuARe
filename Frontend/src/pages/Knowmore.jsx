@@ -64,17 +64,17 @@ function Knowmore () {
 {/* <div dangerouslySetInnerHTML={sanitizedData(htmlData)} /> */}
 
 <div className="relative">
-        <div className=""></div>
+        
         
         <section class=" body-font overflow-hidden bg-slate-700 text-white">
-          <div class="container px-5 py-24 mx-auto ">
-            <div class="lg:w-[90vw]  mx-auto flex flex-wrap bg-black bg-opacity-30 shadow-slate-900 p-5 rounded-xl ">
+          <div class="container px-1 py-24 mx-auto ">
+            <div class="lg:w-[92vw] mx-auto flex flex-wrap bg-black bg-opacity-30 shadow-slate-900 p-5 rounded-xl ">
               {/* <img
                 alt="ecommerce"
                 class="lg:w-1/2 w-full object-contain object-top rounded border border-gray-200"
                 src=""
               /> */}
-              <div className='lg:w-1/2 w-[60vw] object-contain object-top rounded border border-black border-opacity-10' dangerouslySetInnerHTML={sanitizedData(htmlData)} />
+              <div className='lg:w-1/2 w-[60vw] my-auto object-contain object-top rounded border border-black border-opacity-10' dangerouslySetInnerHTML={sanitizedData(htmlData)} />
               <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                 <h2 class="text-sm title-font text-gray-400 tracking-widest">
                   Tanush Chaudhary

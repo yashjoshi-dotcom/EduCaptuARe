@@ -1,9 +1,9 @@
 import React from 'react'
-// import { useAuth0 } from "@auth0/auth0-react";
+import { useAuth0 } from "@auth0/auth0-react";
 
 
 const Profile = () => {
-  // const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
+  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
 
   return (
     <div>
@@ -17,12 +17,12 @@ const Profile = () => {
                   <div class="image overflow-hidden">
                     <img
                       class="mx-auto h-auto w-full"
-                      // src={user.picture}
+                      src={user.picture}
                       alt=""
                     />
                   </div>
                   <h1 class="my-1 text-xl font-bold leading-8 text-gray-100">
-                    {/* {user.name} */}
+                    {user.name}
                   </h1>
 
                   <ul class="mt-3 divide-y rounded bg-gray-100 py-2 px-3 text-gray-600 shadow-sm hover:text-gray-700 hover:shadow">
